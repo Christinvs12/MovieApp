@@ -4,10 +4,17 @@
     android:orientation="vertical"
     android:layout_margin="30dp"
     android:gravity="center"
+    android:background="@drawable/bg"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ImageView
+        android:background="@drawable/baseline_4k_24"
+        android:layout_margin="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
     <TextView
         android:text="USERNAME"
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
@@ -17,6 +24,7 @@
         android:layout_height="wrap_content"/>
     <TextView
         android:text="PASSWORD"
+        android:textColor="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
@@ -30,4 +38,5 @@
         android:text="login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
 </LinearLayout>
