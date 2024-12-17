@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Menuapp extends AppCompatActivity {
 
-    Button b2;
+    Button b2,b5,b7;
 
 
     @Override
@@ -27,6 +27,22 @@ public class Menuapp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i);
+            }
+        });
+        b5=(Button) findViewById(R.id.addmov);
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k=new Intent(getApplicationContext(), AddMovie.class);
+                startActivity(k);
+            }
+        });
+        b7=(Button) findViewById(R.id.viewallmov);
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent o=new Intent(getApplicationContext(), ViewAllMovie.class);
+                startActivity(o);
             }
         });
         };

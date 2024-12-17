@@ -11,21 +11,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class AddMovie extends AppCompatActivity {
-    Button b3,b4;
+public class ViewAllMovie extends AppCompatActivity {
+    Button bb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_add_movie);
-        b3=(Button) findViewById(R.id.bmenu);
-        b3.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_view_all_movie);
+        bb=(Button) findViewById(R.id.bbmenu);
+        bb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent j=new Intent(getApplicationContext(),Menuapp.class);
-                startActivity(j);
+                Intent z=new Intent(getApplicationContext(),Menuapp.class);
+                startActivity(z);
             }
-
         });
         };
     }
